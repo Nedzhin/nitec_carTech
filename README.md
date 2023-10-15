@@ -20,11 +20,12 @@ To run the Jupyter notebook, you will need the following libraries and tools:
 You can install these libraries using pip or conda.
 
 ```bash
-pip install torch torchvision jupyter```
+pip install torch torchvision jupyter
+
 
 ```bash
 git clone https://github.com/yourusername/transfer-learning-resnet.git
-cd transfer-learning-resnet```
+cd transfer-learning-resnet
 
 ```
-jupyter notebook transfer_learning_and_fine_tuning_resnet.ipynb```
+jupyter notebook transfer_learning_and_fine_tuning_resnet.ipynb
