@@ -32,3 +32,9 @@ cd transfer-learning-resnet
 
 ```bash
 jupyter notebook transfer_learning_and_fine_tuning_resnet.ipynb
+
+
+You can run the exp.py by this command line
+
+```
+streamlit run exp.py
