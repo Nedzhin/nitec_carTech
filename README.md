@@ -21,12 +21,14 @@ You can install these libraries using pip or conda.
 
 ```bash
 pip install torch torchvision jupyter
-```
+
 
 ```bash
 git clone https://github.com/yourusername/transfer-learning-resnet.git
+
+```bash
 cd transfer-learning-resnet
-```
+
 
 ```bash
 jupyter notebook transfer_learning_and_fine_tuning_resnet.ipynb
