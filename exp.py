@@ -8,7 +8,7 @@ import requests
 st.title("Car Technical Verification by Alhorethm")
 
 # Load a pre-trained PyTorch model
-@st.cache(allow_output_mutation=True)
+@st.cache_resource()
 def load_model():
     model = torch.load('with_shapes.pth', map_location=torch.device('cpu') )
     model.eval()
@@ -47,4 +47,7 @@ if uploaded_image is not None:
             _, predicted_class = output.max(1)
 
         # Display the prediction
-        st.write(f"Predicted class: {predicted_class.item()}")
+        if predicted_class.item() == 0:
+          st.write(f"Predicted class: Valid photo")
+        else:
+          st.write(f"Predicted class: Unvalid photo")
